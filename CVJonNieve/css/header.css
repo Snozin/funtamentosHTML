@@ -1,3 +1,45 @@
 .header {
-  margin-top: calc(var(--navbar-size) + 30px);
+  border: 1px solid red;
+  height: 100vh;
+  background: url(/CVJonNieve/img/header-bg.jpg) top center no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header > h1,
+.header > .tagline {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 1rem;
+}
+
+.header > h1 {
+  font-weight: normal;
+}
+
+.header h1 span {
+  display: block;
+  font-family: juego-tronos;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.4),
+                1px -1px 1px rgba(255, 255, 255, 0.4),
+                -1px 1px 1px rgba(255, 255, 255, 0.4),
+                -1px -1px 1px rgba(255, 255, 255, 0.4);
+}
+
+@media all and (min-width: 768px) {
+  .header > h1,
+.header > .tagline {
+  margin-left: 50%;
+  background-color: transparent;
+}
+
 }
