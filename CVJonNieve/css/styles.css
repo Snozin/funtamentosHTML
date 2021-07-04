@@ -16,3 +16,19 @@
 body {
   /* padding-top: var(--navbar-size); */
 }
+
+h1,
+h2 {
+  font-family: juego-tronos;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3rem 1rem;
+}
