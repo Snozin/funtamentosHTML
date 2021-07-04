@@ -32,3 +32,7 @@ h2 {
 .section {
   padding: 3rem 1rem;
 }
+
+.section img {
+  width: 100%;
+}
