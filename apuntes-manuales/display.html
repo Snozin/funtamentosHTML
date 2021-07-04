@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+  </head>
+  <body>
+    <main>
+      <h1>Manejo de elementos de bloque</h1>
+
+      <section>
+        <h2>Elementos de bloque por defecto</h2>
+        <p>
+          Incluyen de forma predefinida la propiedad <code>display:block</code>.
+        </p>
+        <div>
+          <code>
+            h1(h1/6) <br />
+            p <br />
+            div <br />
+            blockquote <br />
+          </code>
+        </div>
+      </section>
+
+      <section>
+        <h2>Display Block</h2>
+        <p>
+          Los elementos con display block responden a: <br />
+          <code> margin:top | bottom | left | right</code>
+        </p>
+        <p>
+          Esta propiedad hace que un elemento ocupe una fila completa de la
+          pantalla obligando al resto de elementos a desplazarse a la línea
+          inferior.
+        </p>
+
+        <div style="margin: 5px; border: 1px solid blue">
+          <code> margin: 5px; border: 1px solid blue </code>
+        </div>
+      </section>
+
+      <section>
+        <h2>Display Inline</h2>
+        <p>
+          Los elementos con display inline no responden a: <br />
+          <code>
+            margin: top | bottom <br />
+            border
+          </code>
+        </p>
+        <p>
+          Esta propiedad permite que "la caja" qeu contiene a un elemento se
+          ajuste únicamente a su contenido y no coupe más espacio que el propio
+          contenido.
+        </p>
+
+        <div style="display: inline; margin: 5px 5px; border: 1 px solid blue">
+          <code>display: inline; margin: 5px; border: 1 px solid blue</code>
+        </div>
+      </section>
+
+      <section>
+        <h2>Display Inline-block</h2>
+        <p>
+          Responden a todas las propiedades de <code>margin</code> y
+          <code>border</code>.
+        </p>
+        <p>
+          Los elementos con display <code>inline-block</code> son una
+          combinación de los dos casos anteriores: Permiten a los elementos
+          mostrarse en la misma línea como si fueran <code>inline</code> pero
+          también son afectados por <code>margin</code> y <code> border</code>.
+        </p>
+
+        <div style="display: inline-block; border: 1px solid blue; margin: 5px">
+          <code
+            >display: inline-block; border: 1px solid blue; margin: 5px
+          </code>
+        </div>
+      </section>
+
+      <section>
+        <h2>Display None</h2>
+        <p>
+          Permite ocultar elementos en el HTML como si no existieran, es decir,
+          no ocuparán espacio físico en el documento aunque tengan un tamaño
+          asignado ni tampoco se mostrará su contenido. Pero al inspeccionar con
+          el navegador si que estarán ahí.
+        </p>
+        <div style="display: none">
+          <code>display:none</code>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

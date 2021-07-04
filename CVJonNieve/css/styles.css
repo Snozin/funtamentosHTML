@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+  font-family: juego-tronos;
+  src: url('../fonts/gt.ttf');
+}
+
+:root {
+  --navbar-size: 50px;
+}
+
+* {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}

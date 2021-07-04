@@ -1,0 +1,66 @@
+.navbar {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: var(--navbar-size);
+}
+
+.logo {
+  font-family: juego-tronos;
+  line-height: var(--navbar-size);
+  text-align: center;
+}
+
+.burger-label {
+  position: absolute;
+  top: .3rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.burger-label::before {
+  content: "";
+  background-color: darkgray;
+  width: 2rem;
+  height: .2rem;
+  position: absolute;
+  left: .5rem;
+  top: .5rem;
+  box-shadow: 0 .45rem 0 0 darkgray, 0 .9rem 0 0 darkgray;
+
+}
+
+/* cerrado */
+.navbar-list {
+  display: none;
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+/* abierto */
+#burger-checkbox:checked ~ .navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  height: calc(100vh - var(--navbar-size));
+  opacity: .85;
+}
+
+.navbar-item a {
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  line-height: 3rem;
+}

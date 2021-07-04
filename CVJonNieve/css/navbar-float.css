@@ -1,0 +1,35 @@
+.navbar {
+  background-color: var(--navbar-bgc);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--navbar-size);
+  line-height: var(--navbar-size);
+}
+
+.navbar > .navbar-list {
+  list-style: none;
+  padding: 0;
+  float: right;
+  margin: 0;
+}
+
+.navbar > .navbar-list .navbar-item {
+  display: inline-block;
+  margin: 0;
+}
+
+.navbar-item a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.logo {
+  float: left;
+  height: var(--navbar-size);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
